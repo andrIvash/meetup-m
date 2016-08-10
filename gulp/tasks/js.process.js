@@ -6,7 +6,7 @@ var customOpts = {
 };
 var opts = $.assign({}, $.watchify.args, customOpts);
 var b = $.watchify($.browserify(opts).transform($.babel.configure({
-          presets: ["es2015", "react"]
+          presets: ["es2015"]
           
         }))); 
 
