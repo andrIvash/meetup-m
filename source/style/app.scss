@@ -1,12 +1,22 @@
 //------------------------------ fonts ---------------------------------------//
 
+@font-face {
+    font-family: 'Gagalin';
+    src: url('../fonts/gagalin-regular-webfont.woff2') format('woff2'),
+    url('../fonts/gagalin-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
 
-// @font-face {
-//     font-family: 'georgiaitalic';
-//     src: url('../fonts/georgia_italic-webfont.woff2') format('woff2'),
-//          url('../fonts/georgia_italic-webfont.woff') format('woff');
-//     font-weight: normal;
-//     font-style: normal;
+}
+
+@font-face {
+    font-family: 'Permian';
+    src: url('../fonts/permianslabseriftypeface-webfont.woff2') format('woff2'),
+    url('../fonts/permianslabseriftypeface-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
 
 
 
@@ -17,6 +27,20 @@
 
 
 //------------------------------ base styles ---------------------------------//
+@import "common/mixin";
+
+html {
+    font-size: 16px;
+    @include laptop {
+        font-size: 12px;
+    }
+    @include tablet {
+        font-size: 10px;
+    }
+    @include phone {
+        font-size: 8px;
+    }
+}
 html, body {
     height: 100%;
 }
@@ -47,13 +71,18 @@ body {
     background-color: #000000;
 }
 
-
+.fixed {
+    position:fixed;
+    width:100%;
+    overflow: hidden;
+}
 
 //------------------------------------- file import --------------------------//
 
-@import "common/mixin";
+
 @import 'common/header';
 @import 'common/main-content';
+@import 'common/menu';
 @import 'common/footer';
 
  
