@@ -7,6 +7,7 @@
   font-size: rem(18px);
   font-weight: 400;
   position: relative;
+  margin-bottom: rem(50px);
 
   &:before {
     display: block;
@@ -70,4 +71,31 @@
   font-family: 'Permian';
   font-size: rem(16px);
   font-weight: 400;
+  margin-bottom: 10px;
+}
+
+.host__socials {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.host__socials-item {
+  display: inline-block;
+  margin-left: 2px;
+  &:first-child {
+    margin-left: 0;
+  }
+}
+
+.host__link {
+  display: block;
+  width: 15px;
+  height: 15px;
+  text-decoration: none;
+  overflow: hidden;
+}
+.host__socials-img {
+  width: 100%;
+  height: auto;
 }
