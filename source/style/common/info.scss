@@ -1,0 +1,73 @@
+.info {
+  padding: rem(50px) 0;
+}
+.info__text {
+  color: black;
+  font-family: 'Permian';
+  font-size: rem(18px);
+  font-weight: 400;
+  position: relative;
+
+  &:before {
+    display: block;
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -150px;
+    height: 98%;
+    width: 131px;
+    background: url('../img/info-prev.png') center center repeat-y;
+
+  }
+  &:after {
+    display: block;
+    content: '';
+    position: absolute;
+    top: 0;
+    right: -150px;
+    height: 98%;
+    width: 131px;
+    background: url('../img/info-after.png') center center repeat-y;
+
+  }
+}
+
+.info__hosts {
+  display: flex;
+  justify-content: space-between;
+}
+.host {
+  display: flex;
+  justify-content: space-between;
+  margin-left: rem(80px);
+  &:first-child {
+    margin-left: 0;
+  }
+}
+.host__wrap-img {
+  width: 162px;
+  height: 160px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+.host__img {
+  width: 100%;
+  height: auto;
+}
+
+.host__right {
+  margin-left: rem(20px);
+}
+.host__name {
+  color: black;
+  font-family: 'Permian';
+  font-size: rem(26px);
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+.host__desq {
+  color: black;
+  font-family: 'Permian';
+  font-size: rem(16px);
+  font-weight: 400;
+}
