@@ -96,7 +96,7 @@
 // ----------------------  боковой блок -------------------- //
 
 .menu {
-  position: absolute;
+  position: fixed;
   top: 0;
   right: 0;
   bottom:0;
@@ -114,4 +114,31 @@
 .menu--open {
   transform: translateX(0px);
   transition: transform 0.3s ease-in;
+}
+//-------------- внутренний блок меню----------------------------//
+
+.menu__list {
+  padding: 10px 20px;
+  width: 320px;
+  height: 400px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.menu__link {
+  text-decoration: none;
+  font-size: rem(45px);
+  color: #e53852;
+  font-family: Gagalin;
+  font-weight: 400;
+  text-transform: uppercase;
+
+  &:hover {
+    text-shadow: 0.9px 2.9px 0 black;
+  }
 }

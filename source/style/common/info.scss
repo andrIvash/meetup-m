@@ -88,14 +88,17 @@
   }
 }
 
+#fb, #tw {
+  fill: #000;
+}
 .host__link {
   display: block;
   width: 15px;
   height: 15px;
   text-decoration: none;
   overflow: hidden;
+  &:hover > #fb, &:hover > #tw {
+    fill: #e53852;
+  }
 }
-.host__socials-img {
-  width: 100%;
-  height: auto;
-}
+
