@@ -6,7 +6,8 @@ module.exports = (function () {
         itemSelector: '.grid-item',
         percentPosition: true,
         columnWidth: '.grid-sizer',
-        gutter: 5
+        gutter: 5,
+        initLayout: true
     });
 // layout Isotope after each image loads
     $grid.imagesLoaded().progress( function() {

@@ -17,7 +17,7 @@
 }
 
 .top-screen {
-  background: url('../img/texture.png') center center no-repeat,
+  background: url('../img/texture-fabric.png') top left,
               url('../img/video.jpg') center center no-repeat;
   background-size: cover;
   @include phone {
@@ -52,7 +52,7 @@
   text-shadow: 0.9px 2.9px 0 white;
   font-size: rem(55px);
   font-weight: 400;
-  margin-bottom: rem(90px);
+  margin-bottom: rem(190px);
 }
 
 .top-screen__btn {

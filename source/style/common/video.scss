@@ -26,13 +26,49 @@
     content: "";
     position: absolute;
     display: block;
-    width: 70px;
-    height: 70px;
+    width: 80px;
+    height: 80px;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     border-radius: 50%;
-    background: #808080;
+    border: 3px solid #808080;
+
+    //&:after {
+    //  display: block;
+    //  width: 50px;
+    //  height: 50px;
+    //  content: '';
+    //  position: absolute;
+    //  top: 50%;
+    //  left: 50%;
+    //  transform: translate(-40%, -50%);
+    //  background: url('../img/tri.png') center center no-repeat;
+    //
+    //}
+  }
+  .svg-triangle{
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-40%, -50%);
+  }
+
+  .svg-triangle polygon {
+    fill:#808080;
+  }
+
+
+
+  &:hover {
+    .video__start {
+      border-color: #fff;
+    }
+    .svg-triangle polygon {
+      fill:#fff;
+    }
   }
 
 }
