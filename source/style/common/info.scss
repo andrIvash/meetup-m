@@ -36,6 +36,11 @@
 .info__hosts {
   display: flex;
   justify-content: space-between;
+
+  @include tablet {
+    display: block;
+  }
+
 }
 .host {
   display: flex;
@@ -44,12 +49,22 @@
   &:first-child {
     margin-left: 0;
   }
+  @include tablet {
+    margin-left: 0;
+    margin-bottom: 10px;
+    justify-content: center;
+  }
 }
 .host__wrap-img {
   width: 162px;
   height: 160px;
   border-radius: 50%;
   overflow: hidden;
+
+  @include tablet {
+    width: 102px;
+    height: 100px;
+  }
 }
 .host__img {
   width: 100%;
