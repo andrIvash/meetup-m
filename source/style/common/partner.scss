@@ -1,0 +1,43 @@
+.partners {
+  text-align: center;
+}
+.partners__list {
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  margin-bottom: 40px;
+}
+.partners__item {
+  display: inline-block;
+  margin-left: 20px;
+  margin-bottom: 20px;
+  &:first-child {
+    margin-left: 0;
+  }
+  &.avito {
+    width: 128px;
+    height: 35px;
+  }
+  &.sber {
+    width: 70px;
+    height: 45px;
+  }
+  &.alfa {
+    width: 23px;
+    height: 37px;
+  }
+  &.tgis {
+    width: 85px;
+    height: 41px;
+  }
+  &.mail {
+    width: 125px;
+    height: 42px;
+  }
+}
+
+.partners__item > img {
+  width: 100%;
+  height: auto;
+}
