@@ -62,13 +62,13 @@ body {
 }
 .wrapper:after {
     content: "";
-    height: 100px;
+    height: 200px;
     display: block;
 }
 
 .footer {
-    height: 100px;
-    margin-top: -100px;
+    height: 200px;
+    margin-top: -200px;
     background-color: #000000;
 }
 
