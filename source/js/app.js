@@ -4,3 +4,4 @@ menu.init();
 
 require('./video-modal');
 require('./foto');
+require('./map');
